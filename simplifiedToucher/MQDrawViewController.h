@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MQDrawViewController.h
 //  simplifiedToucher
 //
 //  Created by yons on 16/3/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MQDrawViewController : UIViewController
 
 @end
-
