@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MQBaseLine : UIView
+@interface MQBaseLine : NSObject
+
+@property (nonatomic) CGPoint begin;
+@property (nonatomic) CGPoint end;
+
+//+(instancetype)baseLineWithPoint:(CGPoint)begin;
 
 @end

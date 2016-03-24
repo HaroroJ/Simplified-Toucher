@@ -10,4 +10,14 @@
 
 @implementation MQBaseLine
 
+//+(instancetype)baseLineWithPoint:(CGPoint)begin
+//{
+//    MQBaseLine *line = [[self alloc] init];
+//   
+//    [line moveToPoint:begin];
+//    
+//    return line;
+//    
+//}
+
 @end

@@ -10,4 +10,6 @@
 
 @interface MQDrawView : UIView
 
+-(void)cleanScreen;
+
 @end
