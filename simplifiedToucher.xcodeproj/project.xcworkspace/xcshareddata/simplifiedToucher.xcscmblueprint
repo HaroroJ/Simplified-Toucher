@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "127F165D15B703045F6EFC31BE449A6060FA763E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "127F165D15B703045F6EFC31BE449A6060FA763E" : 0,
+    "FB3AAF82070A841D9E2737847C38DFEFC09EBE77" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2E0FE777-1E3C-4ECC-9130-9CEC8C9274A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "127F165D15B703045F6EFC31BE449A6060FA763E" : "simplifiedToucher\/",
+    "FB3AAF82070A841D9E2737847C38DFEFC09EBE77" : "simplifiedToucher\/simplifiedToucher\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "simplifiedToucher",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "simplifiedToucher.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HaroroJ\/Simplified-Draw.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "127F165D15B703045F6EFC31BE449A6060FA763E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HaroroJ\/simplifiedToucher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB3AAF82070A841D9E2737847C38DFEFC09EBE77"
+    }
+  ]
+}

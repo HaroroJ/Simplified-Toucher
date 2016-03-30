@@ -239,6 +239,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    if (!self.selectedLine) {
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInView:self];
@@ -261,6 +262,7 @@
 //    UITouch *touch = [touches anyObject];
     
     [self setNeedsDisplay];
+    }
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -268,24 +270,29 @@
     
 //    UITouch *touch = [touches anyObject];
     NSLog(@"%@",NSStringFromSelector(_cmd));
-    
-    for (UITouch *touch in touches) {
-        NSValue *key = [NSValue valueWithNonretainedObject:touch];
-        MQBaseLine *line = self.currentLines[key];
+    if (!self.selectedLine) {
+        for (UITouch *touch in touches) {
+            NSValue *key = [NSValue valueWithNonretainedObject:touch];
+            MQBaseLine *line = self.currentLines[key];
+            
+            CGPoint location = [touch locationInView:self];
+            line.end = location;
+            //        [line addLineToPoint:location];
+        }
         
-        CGPoint location = [touch locationInView:self];
-        line.end = location;
-//        [line addLineToPoint:location];
+        //    CGPoint location = [touch locationInView:self];
+        //    [self.line addLineToPoint:location];
+        
+        [self setNeedsDisplay];
     }
     
-//    CGPoint location = [touch locationInView:self];
-//    [self.line addLineToPoint:location];
     
-    [self setNeedsDisplay];
 }
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    
+    if (!self.selectedLine) {
     for (UITouch *touch in touches) {
         NSValue *key = [NSValue valueWithNonretainedObject:touch];
         
@@ -300,6 +307,7 @@
 //    self.line = nil;
     
     [self setNeedsDisplay];
+    }
 }
 
 
